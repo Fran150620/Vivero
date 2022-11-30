@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    /*font-family: 'Dancing Script', cursive;*/
+}
+.container{
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.container-ini{
+    background-image: url(/img/inicio.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.logo{
+   width: 160px;
+   height: 100px; 
+}
+.nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.nombre h1{
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 3px 1px 3px #000000;
+    color: white;
+}
+.desarrollo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.art-rev{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    background-color: #b5f9ce;
+    border-radius: 20px;
+}
+.art-img{
+    width: 50vw;
+}
+.art-content{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+.art-content h1{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.art-content p{
+    font-size: 2rem;
+}

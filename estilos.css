@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
+    height: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@
 .inicio{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
     padding: 10px 15px;
 }
 .menu{
@@ -37,18 +37,20 @@
     border-radius: 15px;
     cursor: pointer;
 }
-.logo{
-   width: 160px;
-   height: 100px; 
-}
 .nombre{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
 }
+.nombre img{
+    width: 50vw;
+}
 .nombre h1{
+    text-align: center;
+    width: 100vw;
     font-size: 5rem;
     font-weight: 700;
     text-shadow: 3px 1px 3px #000000;
@@ -59,16 +61,29 @@
     flex-direction: column;
     gap: 30px;
 }
+.separador{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.sn{
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+}
 
 .art-rev{
     display: flex;
     flex-direction: row-reverse;
-    gap: 30px;
-    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    gap: 20px;
+    background-image: url(/img/fondoart.png) ;
     border-radius: 20px;
+    padding: 20px;
 }
 .art-img{
-    width: 30vw;
+    width: 15rem;
+    opacity: 0.9;
+    
 }
 .art-content{
     width: 70vw;
@@ -76,9 +91,19 @@
     flex-direction: column;
 }
 .art-content h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
 }
 .art-content p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+.desarrollo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.img-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

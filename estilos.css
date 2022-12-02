@@ -3,7 +3,11 @@
     font-family: 'Caveat', cursive;
     /*font-family: 'Dancing Script', cursive;*/
 }
-
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container-ini{
     background-image: url(/img/inicio.jpg);
     display: flex;
@@ -128,6 +132,10 @@ hr{
     background-image: url(/img/card.png);
     box-shadow: 5px 7px 5px -2px rgba(89,89,89,1);
     border-radius: 70px;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .content{
     padding: 20px;
@@ -135,13 +143,15 @@ hr{
     flex-direction: column;
     gap: 10px;
 }
-.content h3{
+.card-title{
+    font-size: 2rem;
     font-weight: 700;
     color: #000000;
 }
 .content p{
     font-weight: 500;
     color: #000000;
+    font-size: 1.4rem;
 }
   
 .card-img{
@@ -156,3 +166,15 @@ hr{
     border-radius: 10px;
     
 }
+.btn{
+    border-radius: 60px;
+    background: linear-gradient(to right, #273a2d 0%, #9dc09d 100%);
+    box-shadow: 5px 7px 5px -2px rgba(89,89,89,1);
+}
+.btn h3{
+    color: white;
+}
+.bnt:hover {
+    background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: white;
+    }

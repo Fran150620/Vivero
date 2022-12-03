@@ -21,21 +21,30 @@
 .inicio{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     padding: 10px 15px;
+    
 }
 .menu{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    background-color: #4B797E;
+    border-radius: 10px;
+    padding: 0px 20px;
+    box-shadow: 5px 7px 5px -2px rgba(89,89,89,1);
 }
 .menu a{
     text-decoration: none;
     font-size: 2rem;
     color: white;
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    border-radius: 15px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+.menu a:hover{
+    transform: scale(1.2);
+    color: white;
 }
 .nombre{
     display: flex;
@@ -90,6 +99,7 @@
     width: 70vw;
     display: flex;
     flex-direction: column;
+    
 }
 .art-content h1{
     font-size: 4rem;
@@ -113,7 +123,12 @@ hr{
    
 }
 .separador{
-    
+   padding: 0px 180px; 
+}
+.separador hr{
+    height: 7px;
+    background: #95B8B6;
+    border-radius: 20px;
 }
 .serv {
     display: grid;
@@ -133,12 +148,16 @@ hr{
     box-shadow: 5px 7px 5px -2px rgba(89,89,89,1);
     border-radius: 70px;
     transition: all 0.2s ease-in-out;
+    padding: 30px;
 }
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .content{
     padding: 20px;
+    border-radius: 30px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -166,15 +185,90 @@ hr{
     border-radius: 10px;
     
 }
-.btn{
-    border-radius: 60px;
-    background: linear-gradient(to right, #273a2d 0%, #9dc09d 100%);
-    box-shadow: 5px 7px 5px -2px rgba(89,89,89,1);
-}
+
 .btn h3{
-    color: white;
+    color: black;
 }
-.bnt:hover {
-    background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-    color: white;
-    }
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #57cc99;
+   z-index: 1;
+  }
+  .btn:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .btn:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #80ed99;
+    right: 0;
+  }
+  .btn:active {
+    top: 2px;
+  }
+  .pie{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 70vw;
+  }
+  .pie h3{
+    font-size: 3rem;
+  }
+  .redes{
+    display: flex;
+    gap: 15px;
+  }
+  .icon{
+    width: 3rem;
+    height: 3rem;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    height: 27rem;
+    padding: 10px 20px;
+    
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 10px 40px;
+    gap: 3px;
+    background-image: url(/img/card.png);
+    border-radius: 20px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    
+  }
+  .form label{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .form input{
+    border-radius: 20px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  }

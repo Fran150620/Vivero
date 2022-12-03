@@ -15,8 +15,8 @@
     <div class="container-ini">
         <div class="inicio">
             <nav class="menu">
-                <a href="">Sobre Nosotros</a>
-                <a href="">Servicios</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#sn">Sobre Nosotros</a>
                 <a href="">Login</a>
                 <a href="">Registro</a>
             </nav>
@@ -27,9 +27,9 @@
         </div>
     </div>
     <div class="titprin">
-        <div class="separador"><hr></div>
-        <h1 class="sn">Nuestros Servicios</h1>
         <hr>
+        <h1 class="sn" id="servicios">Nuestros Servicios</h1>
+        <div class="separador"><hr></div>
     </div>
     <div class="serv">
         <div class="div1 card"> 
@@ -43,7 +43,7 @@
         <div class="div2 card"> 
             <div class="content">
                 <div class="card-img"><img src="/img/boda.jpg" alt=""></div>
-                <h3 class="card-title">Arreglos para bodas y eventos</h3>
+                <h3 class="card-title">Arreglos de bodas y eventos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis error at nulla aut. Totam ut nostrum, corrupti perferendis sapiente adipisci amet incidunt autem repudiandae excepturi, minima veniam impedit maxime at.</p>
                 <div class="container"><button class="btn"><h3>Adquirir</h3></button></div>
             </div>
@@ -59,8 +59,8 @@
         </div>
     <div class="titprin">
         <hr>
-        <h1 class="sn">Sobre Nosotros</h1>
-        <hr>
+        <h1 class="sn" id="sn">Sobre Nosotros</h1>
+        <div class="separador"><hr></div>
     </div>
     <div class="desarrollo">
         <article class="art-rev">
@@ -91,8 +91,26 @@
             </div>
         </article>
     </div>
+    <hr>
     <footer>
-        
+        <form action="" class="form">
+            <label for="">Nombre</label>
+            <input type="text">
+            <label for="">Teléfono</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10">Mensaje</textarea>
+            <button class="btn"><h3> Enviar</h3></button>
+        </form>
+      <div class="pie">
+        <h3>Seguinos en nuestras redes!</h3>
+        <div class="redes">
+            <a href=""><img src="/img/facebook.png" alt="" class="icon"></a>
+            <a href=""><img src="/img/tik-tok.png" alt="" class="icon"></a>
+            <a href=""><img src="/img/instagram.png" alt="" class="icon"></a>
+        </div>
+      </div>  
     </footer>
 
 </body>

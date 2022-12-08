@@ -323,6 +323,7 @@
     }
     .art-rev{
         flex-direction: column;
+        align-items: center;
     }
     .img-art{
         display: none;
